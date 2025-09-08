@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+Cypress.Commands.add('dragAndDrop', (sourceSelector, targetSelector) => {
+  cy.get(sourceSelector)
+    .trigger('mousedown', { which: 1 }) // Inicia o "arrastar" (clique do botão esquerdo)
+  cy.get(targetSelector)
+    .trigger('mousemove') // Simula o movimento do mouse sobre o alvo
+    .trigger('mouseup', { force: true }); // Simula o "soltar" do elemento
+});
