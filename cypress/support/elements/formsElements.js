@@ -1,0 +1,20 @@
+export const formElements = {
+    menuForms:"Forms",
+    subMenuPracticeForm: ":nth-child(2) > .element-list > .menu-list > #item-0",
+    firstName: "#firstName",
+    lastName: "#lastName",
+    email: "#userEmail",
+    gender: "#genterWrapper > .col-md-9 > :nth-child(1)",
+    mobile: "#userNumber",
+    subjects: ".subjects-auto-complete__value-container",
+    hobbie: "#hobbiesWrapper > .col-md-9 > :nth-child(1)",
+    selctPicture: "[type='file']",
+    currentAddress: "#currentAddress",
+    clickState: "#stateCity-wrapper > :nth-child(2)",
+    selectState: "#react-select-3-option-0",
+    clickCity: "#stateCity-wrapper > :nth-child(3)",
+    selectCity: "#react-select-4-option-0",
+    submit: "#submit",
+    modalConfirme: "#example-modal-sizes-title-lg",
+    closeModalConfirme: "#closeLargeModal"
+}
