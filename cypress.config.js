@@ -4,8 +4,7 @@ const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 module.exports = defineConfig({
     env:{
     deviceTypeThreshold: 1150,
-    testDataFile: 'dataFile/userData',
-    "baseUrl": "https://demoqa.com/",
+    testDataFile: 'dataFile/userData'
     
   },
   e2e: {

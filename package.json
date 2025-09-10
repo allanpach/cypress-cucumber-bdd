@@ -4,19 +4,16 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cypress open",
-    "allure-chro": "cypress run --browser chrome --env allure=true",
-    "allure-fire": "npx cypress run --browser firefox --env allure=true",
-    "allure:repo": "allure generate allure-results --clean -o allure-report",
-    "allure:clea": "rm -r allure-results/ allure-report cypress/screenshots || true"
+    "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/e2e/features --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
+
   },
   "author": "Allan Vala",
   "license": "ISC",
   "devDependencies": {
-    "@shelex/cypress-allure-plugin": "^2.41.2",
     "allure-commandline": "^2.34.1",
     "cypress": "^14.3.1",
-    "cypress-cucumber-preprocessor": "^4.3.1",
-    "global": "^4.4.0"
+    "mocha-allure-reporter": "^1.4.0"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
