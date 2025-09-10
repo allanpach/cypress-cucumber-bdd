@@ -1,24 +1,44 @@
-# 1. Install Cypress
-npm install cypress --save-dev
+# Cypress Node Project
 
-# 2. Open Cypress for the first time
-npx cypress open
+Este é um projeto de automação de testes utilizando o Cypress com Node.js. Projeto sendo desenvolvido no curso de Automação de testes com Cypress.
 
-# 3. Install Cucumber Preprocessor
-npm install --save-dev @badeball/cypress-cucumber-preprocessor
+## Pré-requisitos
 
-# 4. Install ESBuild Preprocessor
-npm install --save-dev @bahmutov/cypress-esbuild-preprocessor
-npm install -g esbuild
+- Node.js: Certifique-se de ter o Node.js instalado em sua máquina. [Download Node.js](https://nodejs.org/)
 
-# 5. Install XPath Support
-npm install --save-dev cypress-xpath
+## Clonando o Repositório
 
-**Run a specific feature file**
-npx cypress run --spec "cypress/e2e/features/login.feature"
+Para clonar este repositório, execute o seguinte comando no terminal:
 
-**Open Cypress in interactive mode**
-npx cypress open
+```bash
+git clone https://github.com/allanpach/cypress-cucumber-bdd.git
+```
 
-**If Cypress has issues, clear the cache**
-npx cypress open --clear-cache
+## Instalando o Projeto
+
+Após clonar o repositório, navegue até o diretório do projeto e instale as dependências utilizando o npm:
+
+```bash
+cypress-cucumber-bdd
+npm install
+```
+
+Isso irá instalar todas as dependências listadas no arquivo `package.json`, incluindo o Cypress.
+
+## Executando os Testes
+
+Para executar os testes no modo interativo ou modo com interface de usuário (UI), utilize o seguinte:
+```bash
+npm run test 
+```
+Para executar os testes no modo que gera allure-report, utilize o seguinte:
+```bash
+npm run browser:chrome
+```
+Para abrir o relatório allure-report, utilize o seguinte:
+```bash
+npm run report:allure
+```
+
+## Contribuindo
+
