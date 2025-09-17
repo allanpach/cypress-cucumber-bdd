@@ -1,0 +1,98 @@
+[
+  {
+    "nome": "João",
+    "sobreNome": "Silva",
+    "email": "joao.silva@email.com",
+    "idade": "30",
+    "salario": "50000",
+    "departamento": "TI"
+  },
+  {
+    "nome": "Maria",
+    "sobreNome": "Santos",
+    "email": "maria.santos@email.com",
+    "idade": "25",
+    "salario": "45000",
+    "departamento": "Marketing"
+  },
+  {
+    "nome": "Pedro",
+    "sobreNome": "Alves",
+    "email": "pedro.alves@email.com",
+    "idade": "35",
+    "salario": "55000",
+    "departamento": "Vendas"
+  },
+  {
+    "nome": "Ana",
+    "sobreNome": "Souza",
+    "email": "ana.souza@email.com",
+    "idade": "28",
+    "salario": "48000",
+    "departamento": "RH"
+  },
+  {
+    "nome": "Lucas",
+    "sobreNome": "Fernandes",
+    "email": "lucas.fernandes@email.com",
+    "idade": "22",
+    "salario": "40000",
+    "departamento": "TI"
+  },
+  {
+    "nome": "Carla",
+    "sobreNome": "Gomes",
+    "email": "carla.gomes@email.com",
+    "idade": "29",
+    "salario": "51000",
+    "departamento": "Marketing"
+  },
+  {
+    "nome": "Rafael",
+    "sobreNome": "Pereira",
+    "email": "rafael.pereira@email.com",
+    "idade": "33",
+    "salario": "57000",
+    "departamento": "Vendas"
+  },
+  {
+    "nome": "Juliana",
+    "sobreNome": "Lima",
+    "email": "juliana.lima@email.com",
+    "idade": "26",
+    "salario": "49000",
+    "departamento": "RH"
+  },
+  {
+    "nome": "Gabriel",
+    "sobreNome": "Costa",
+    "email": "gabriel.costa@email.com",
+    "idade": "31",
+    "salario": "53000",
+    "departamento": "TI"
+  },
+  {
+    "nome": "Larissa",
+    "sobreNome": "Rodrigues",
+    "email": "larissa.rodrigues@email.com",
+    "idade": "24",
+    "salario": "46000",
+    "departamento": "Marketing"
+  },
+  {
+    "nome": "Felipe",
+    "sobreNome": "Martins",
+    "email": "felipe.martins@email.com",
+    "idade": "38",
+    "salario": "62000",
+    "departamento": "Vendas"
+  },
+  {
+    "nome": "Amanda",
+    "sobreNome": "Oliveira",
+    "email": "amanda.oliveira@email.com",
+    "idade": "27",
+    "salario": "50000",
+    "departamento": "RH"
+  }
+]

@@ -1,3 +1,4 @@
+
 const el = require('../elements/elementElements').elementElements
 
 class Element {
@@ -11,15 +12,15 @@ class Element {
         
     }
 
-    criarNovoRegistro(){
+    criarNovoRegistro(nome, sobreNome, email, idade, salario, departamento){
         cy.get(el.subMenuWebTables).click()
         cy.get(el.addNewRecordButton).click()
-        cy.get(el.firstName).type("Allan")
-        cy.get(el.lastName).type("Vale")
-        cy.get(el.email).type("teste@teste.com")
-        cy.get(el.age).type("19")
-        cy.get(el.salary).type("9000")
-        cy.get(el.department).type("QA")
+        cy.get(el.firstName).type(nome)
+        cy.get(el.lastName).type(sobreNome)
+        cy.get(el.email).type(email)
+        cy.get(el.age).type(idade)
+        cy.get(el.salary).type(salario)
+        cy.get(el.department).type(departamento)
         cy.get(el.submit).click()
  
     }

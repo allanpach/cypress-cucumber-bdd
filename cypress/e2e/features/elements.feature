@@ -4,9 +4,14 @@ Feature: Criar, editar e excluir registors
 Background:
     Given acessar home page DEMOQA    
 
-Scenario: Acessar a opção Elements
+Scenario Outline: Acessar a opção Elements
     Given que eu acesso a opção Elements
     When acesso o submenu Web Tables
-    Then criar um novo registro
-    And editar o novo registro criado
+    Then criar um novo registro "<nome>", "<sobreNome>", "<email>", "<idade>", "<salario>", "<departamento>"
+    And editar o novo registro criado "<editName>"
     And deletar o novo registro criado
+
+        Examples:
+        | nome | sobreNome | email         | idade |salario|departamento |editName |
+        | Allan| Vale      | este@teste.com|19     |9000   |QA           |AllanEdit|
+

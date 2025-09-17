@@ -5,18 +5,18 @@ class FormPage {
      cy.contains(el.menuForms).click()
     }
 
-    preencherPraticeForm(){
+    preencherPraticeForm(nome, sobreNome, email, telefone, subj, arquivo, endereco){
         cy.get(el.subMenuPracticeForm).click()
         cy.get(el.submit).should('exist').should('be.visible')
-        cy.get(el.firstName).type("Allan")
-        cy.get(el.lastName).type("Vale")
-        cy.get(el.email).type("teste@teste.com")
-        cy.get(el.mobile).type("1199999099")
+        cy.get(el.firstName).type(nome)
+        cy.get(el.lastName).type(sobreNome)
+        cy.get(el.email).type(email)
+        cy.get(el.mobile).type(telefone)
         cy.get(el.gender).click()
-        cy.get(el.subjects).type("testeteste teste")
+        cy.get(el.subjects).type(subj)
         cy.get(el.hobbie).click()
-        cy.get(el.selctPicture).selectFile('test.txt')
-        cy.get(el.currentAddress).type("rua brazil, 1222 brasil, sp")
+        cy.get(el.selctPicture).selectFile(arquivo)
+        cy.get(el.currentAddress).type(endereco)
         cy.get(el.clickState).click()
         cy.get(el.selectState).click();
         cy.get(el.clickCity).click()

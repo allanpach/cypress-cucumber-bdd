@@ -6,13 +6,15 @@
     "test": "npx cypress open",
     "browser:chrome": "npx cypress run --browser=chrome --headed --spec cypress/e2e/features --reporter mocha-allure-reporter",
     "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
-
   },
   "author": "Allan Vala",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^10.0.0",
+    "@shelex/cypress-allure-plugin": "^2.41.2",
     "allure-commandline": "^2.34.1",
     "cypress": "^14.3.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "mocha-allure-reporter": "^1.4.0"
   },
   "cypress-cucumber-preprocessor": {

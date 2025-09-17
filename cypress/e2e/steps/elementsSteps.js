@@ -16,13 +16,13 @@ When("acesso o submenu Web Tables", () => {
 
 })
 
-Then("criar um novo registro", () => {
-  element.criarNovoRegistro();
+Then("criar um novo registro {string}, {string}, {string}, {string}, {string}, {string}", (nome, sobreNome, email, idade, salario, departamento) => {
+  element.criarNovoRegistro(nome, sobreNome, email, idade, salario, departamento);
 
 })
 
-And("editar o novo registro criado", () => {
-  element.editarRegistro()
+And("editar o novo registro criado {string}", (editName) => {
+  element.editarRegistro(editName)
 
 })
 
@@ -30,3 +30,4 @@ And("deletar o novo registro criado", () => {
   element.deletarRegistro()
 
 })
+
